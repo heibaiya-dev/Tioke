@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tioke 声库配布</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #f7f8fc;
+            font-family: system-ui, sans-serif;
+            color: #2b2b3a;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 40px;
+            display: flex;
+            gap: 24px;
+            align-items: flex-start;
+            border: 1px solid #e1e4ed;
+        }
+        .illust {
+            width: 260px;
+            height: auto;
+            border-radius: 12px;
+        }
+        .no-img-frame {
+            width: 260px;
+            height: 340px;
+            border: 2px dashed #b9bed1;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #5b6478;
+            text-align: center;
+            padding: 20px;
+            background: #fafcff;
+        }
+        .no-img-frame .code-name {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #1f5fbf;
+        }
+        .no-img-frame .status {
+            font-size: 16px;
+            color: #7a8499;
+            margin-bottom: 8px;
+        }
+        .no-img-frame .date {
+            font-size: 14px;
+            color: #7a8499;
+        }
+        .info-box {
+            flex: 1;
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 14px;
+            color: #1f5fbf;
+        }
+        p {
+            line-height: 1.7;
+            color: #5b5b72;
+            margin-bottom: 20px;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background: #2563eb;
+            color: white;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .wait-btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background: #eef0f6;
+            color: #7a7a90;
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: not-allowed;
+        }
+        @media (max-width: 720px) {
+            .card {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .illust,
+            .no-img-frame {
+                width: 220px;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Tioke JA CV 日文声库 -->
+        <div class="card">
+            <img class="illust" src="ja1.png" alt="Tioke日文CV立绘">
+            <div class="info-box">
+                <h2>Tioke JA CV 日文声库</h2>
+                <p>
+                    介绍文字在这里写！<br>
+                    你可以在这里填写声库特点、录制信息、使用注意事项。
+                </p>
+                <a class="download-btn" href="Tioke JA CV.zip" download>📥 下载声库</a>
+            </div>
+        </div>
+
+        <!-- Tioke ZH CV 中文声库 -->
+        <div class="card">
+            <img class="illust" src="zh.png" alt="Tioke中文CV立绘">
+            <div class="info-box">
+                <h2>Tioke ZH CV 中文声库</h2>
+                <p>
+                    中文CV声库正在制作中，敬请期待！<br>
+                    预计完成时间：寒假。
+                </p>
+                <span class="wait-btn">⏳ 敬请期待</span>
+            </div>
+        </div>
+
+        <!-- Tioke JA CVVC 日文声库，暂无立绘 -->
+        <div class="card">
+            <div class="no-img-frame">
+                <div class="code-name">Tioke JA CVVC</div>
+                <div class="status">敬请期待</div>
+                <div class="date">预计完成时间：2027年6月10日</div>
+            </div>
+            <div class="info-box">
+                <h2>Tioke JA CVVC 日文声库</h2>
+                <p>
+                    日文CVVC声库正在制作中，敬请期待！<br>
+                    预计完成时间：2027年6月10日，有可能会完成。
+                </p>
+                <span class="wait-btn">⏳ 敬请期待</span>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
